@@ -17,7 +17,7 @@ variable "cluster" {
 }
 
 variable "region" {
-  default = "us-east-1"
+  default = "eu-west-2"
 }
 variable "http_port" {
     default = 80
@@ -26,13 +26,13 @@ variable "ssh_port" {
     default = 22
 }
 variable "my_system" {
-    default = "98.207.180.245/32"
+    default = "0.0.0.0/0"
 }
 
 variable "ami" {
-  default = "ami-0a313d6098716f372"
+  default = "ami-07100047e41837f0e"
 }
 
 variable "azs" {
-default = [ "us-east-1a", "us-east-1b", "us-east-1c"]
+default = [ "eu-west-2a", "eu-west-2b", "eu-west-2c"]
 }
