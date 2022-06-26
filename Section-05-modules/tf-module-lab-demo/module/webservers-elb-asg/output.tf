@@ -13,6 +13,7 @@ output "my_asg_id" {
     value ="${aws_autoscaling_group.my_first_asg.id}"
 }
 
+
 output "my_asg_name" {
     description = "outputs module asg name"
     value ="${aws_autoscaling_group.my_first_asg.name}"
