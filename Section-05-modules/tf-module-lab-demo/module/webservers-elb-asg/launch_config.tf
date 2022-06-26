@@ -1,9 +1,11 @@
 resource "aws_launch_configuration" "my-first-launch-conf" {
-  name            = "${var.cluster}-webserver-launch"
-  image_id        = var.ami
-  instance_type   = var.instance_type
-  security_groups = [aws_security_group.webserver_sg.id]
-  key_name        = "LondonkeyPair"
+
+name = "${var.cluster}-webserver-launch"
+image_id = var.ami
+instance_type = var.instance_type
+security_groups=[ aws_security_group.webserver_sg.id ]
+key_name = "LondonkeyPair"
+
 
   lifecycle {
     create_before_destroy = true
