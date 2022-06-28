@@ -2,11 +2,7 @@ variable "environment" {
   description = "type of environment , prod or stg or dev "
   default     = "stg"
 }
-variable "zone_id" {
-  default = "Z015913437MDX5NSGQWWV"
 
-}
-#iiiii
 variable "vpc_id" {
   description = "provide vpc_id"
 }
